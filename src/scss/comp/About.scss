@@ -1,0 +1,56 @@
+#about .about-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 1rem;
+
+  margin: 5rem 0;
+
+  .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1rem;
+    gap: 1rem;
+
+    button {
+      background-color: transparent;
+      padding: 13px;
+      border: solid black 1px;
+      cursor: pointer;
+      border-radius: 20px;
+      transition: all 0.6s;
+      &:hover {
+        background-color: rgb(72, 151, 83);
+        transform: translateY(1px);
+      }
+    }
+    h1 {
+      font-size: 6vmax;
+      color: rgb(248, 150, 150);
+    }
+    p {
+      color: rgb(78, 63, 63);
+      font-size: 2vmax;
+    }
+  }
+  .right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .img {
+      object-fit: cover;
+      object-position: center;
+      display: flex;
+      justify-content: space-around;
+      gap: 1rem;
+      cursor: pointer;
+    }
+  }
+}
